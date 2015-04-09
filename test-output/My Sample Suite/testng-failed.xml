@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [My Sample Suite]">
+  <listeners>
+    <listener class-name="testng_listeners.CustomListener"/>
+  </listeners>
+  <test name="Registration(failed)">
+    <classes>
+      <class name="test_cases.RegistrationTest">
+        <methods>
+          <include name="FailToSubmitRegistrationIfMandatoryFieldsAreMissing"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="SuccessToRegisterUsersForAllProvinces" invocation-numbers="3 4 10"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- test_cases.RegistrationTest -->
+    </classes>
+  </test> <!-- Registration(failed) -->
+</suite> <!-- Failed suite [My Sample Suite] -->

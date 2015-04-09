@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Sample Suite">
+
+<listeners>
+    <listener class-name="testng_listeners.CustomListener" />
+</listeners>
+
+
+<test name="Registration">
+    <classes>
+        <class name="test_cases.RegistrationTest" >
+<!--         <methods> -->
+<!--         	<include name="SuccessToRegisterUsersForAllProvinces"/> -->
+<!--           </methods> -->
+         <methods>
+       	<include name="UserNotSubmittedIfMandatoryFieldsAreMissing"/>
+          </methods>
+    
+        </class> 
+    </classes>
+    
+</test>
+</suite>
